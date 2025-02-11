@@ -1,0 +1,224 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     font-family: 'Poppins', sans-serif;
+// }
+
+// body {
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+// }
+
+// /* Move register buttons to the right */
+// .register-buttons {
+//     position: absolute;
+//     top: 20px;
+//     right: 40px;
+//     /* Moved to the right */
+//     display: flex;
+//     gap: 15px;
+// }
+
+// .register-buttons button {
+//     padding: 12px 24px;
+//     font-size: 16px;
+//     font-weight: bold;
+//     border: none;
+//     cursor: pointer;
+//     border-radius: 8px;
+//     transition: 0.3s;
+// }
+
+// .register-buttons .primary {
+//     background: #007BFF;
+//     color: white;
+// }
+
+// .register-buttons .primary:hover {
+//     background: #0056b3;
+// }
+
+// .register-buttons .secondary {
+//     background: #28A745;
+//     color: white;
+// }
+
+// .register-buttons .secondary:hover {
+//     background: #1e7e34;
+// }
+
+// .login-container {
+//     background: rgba(200, 200, 200, 0.95);
+//     /* Slightly greyish */
+//     padding: 40px;
+//     /* Made bigger */
+//     width: 500px;
+//     /* Increased width */
+//     text-align: center;
+//     border-radius: 12px;
+//     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+// }
+
+// .login-container h2 {
+//     margin-bottom: 25px;
+//     font-weight: 600;
+//     color: #333;
+// }
+
+// .login-container input {
+//     width: 100%;
+//     padding: 14px;
+//     margin: 12px 0;
+//     border: 1px solid #bbb;
+//     border-radius: 8px;
+//     font-size: 16px;
+// }
+
+// .login-container button {
+//     width: 100%;
+//     padding: 14px;
+//     margin-top: 15px;
+//     background: #007BFF;
+//     color: white;
+//     font-size: 20px;
+//     font-weight: bold;
+//     border: none;
+//     cursor: pointer;
+//     border-radius: 8px;
+//     transition: 0.3s;
+// }
+
+// .login-container button:hover {
+//     background: #0056b3;
+// }
+
+// /* Responsive Design */
+// @media (max-width: 768px) {
+//     .login-container {
+//         width: 90%;
+//         padding: 30px;
+//     }
+
+//     .register-buttons {
+//         right: 10px;
+//         /* Adjusted for smaller screens */
+//         top: 10px;
+//     }
+
+//     .register-buttons button {
+//         padding: 10px 18px;
+//         font-size: 14px;
+//     }
+// }
+:host {
+    display: block;
+    height: 100vh;
+    background-image: url('/assets/surgery-1662204_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Move register buttons to the right */
+.register-buttons {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.register-buttons button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.register-buttons .primary {
+    background: #007BFF;
+    color: white;
+}
+
+.register-buttons .primary:hover {
+    background: #0056b3;
+}
+
+.register-buttons .secondary {
+    background: #28A745;
+    color: white;
+}
+
+.register-buttons .secondary:hover {
+    background: #1e7e34;
+}
+
+.login-container {
+    background: rgba(200, 200, 200, 0.95);
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: #007BFF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .register-buttons {
+        right: 10px;
+        top: 10px;
+    }
+
+    .register-buttons button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
