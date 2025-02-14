@@ -35,8 +35,10 @@
 </div>
 
 <div class="login-container">
-    <h2>Login</h2>
-    <input type="text" placeholder="Username or Email">
-    <input type="password" placeholder="Password">
-    <button>Login</button>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username or Email" id="username" formControlName="username" required>
+        <input type="password" id="password" placeholder="Password" formControlName="password" required>
+        <button type="submit">Login</button>
+    </form>
 </div>
